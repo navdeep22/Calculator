@@ -85,25 +85,25 @@ class ViewController: UIViewController {
 //        addToWorking(value : "-")
         if replacechar(){
             
-//            print("inreplace")
+//            t("inreplace")
 //            let c = "*"
             workings.removeLast()
             addToWorking(value : "-")
         }else{
             addToWorking(value : "-")
-//            print("donnotreplace")
+//            t("donnotreplace")
         }
     }
     @IBAction func addBtnPress(_ sender: Any) {
         if replacechar(){
             
-//            print("inreplace")
+//            t("inreplace")
 //            let c = "*"
             workings.removeLast()
             addToWorking(value : "+")
         }else{
             addToWorking(value : "+")
-//            print("donnotreplace")
+//            t("donnotreplace")
         }
     }
     
@@ -111,13 +111,13 @@ class ViewController: UIViewController {
 //        addToWorking(value : ".")
         if replacechar(){
             
-//            print("inreplace")
+//            t("inreplace")
 //            let c = "*"
             workings.removeLast()
             addToWorking(value : ".")
         }else{
             addToWorking(value : ".")
-//            print("donnotreplace")
+//            t("donnotreplace")
         }
         
     }
@@ -201,13 +201,13 @@ class ViewController: UIViewController {
         x = 1
 //        if replacechar(){
 //
-//            print("inreplace")
+//            t("inreplace")
 //            let c = "*"
 //            workings.removeLast()
 //            addToWorking(value : "=")
 //        }else{
 //            addToWorking(value : "=")
-//            print("donnotreplace")
+//            t("donnotreplace")
 //        }
 //        reset()
     }
@@ -221,12 +221,12 @@ class ViewController: UIViewController {
     }
     
     func replacechar()->Bool{
-//        print("infunc")
+//        t("infunc")
         if workings.last == "*" || workings.last == "/" || workings.last == "+"  || workings.last == "-" || workings.last == "=" {
-//            print("inif")
+//            t("inif")
             return true
         }else {
-//            print("inelse")
+//            t("inelse")
             return false
             
             
