@@ -52,9 +52,6 @@ class ViewController: UIViewController {
     }
     @IBAction func divideBtnPress(_ sender: Any) {
         if replacechar(){
-            
-          
-//            let c = "*"
             workings.removeLast()
             addToWorking(value : "/")
         }else{
@@ -64,8 +61,6 @@ class ViewController: UIViewController {
     @IBAction func multiplyBtnPress(_ sender: Any) {
         
         if replacechar(){
-            
-//            let c = "*"
             workings.removeLast()
             addToWorking(value : "*")
         }else{
@@ -82,42 +77,28 @@ class ViewController: UIViewController {
     
     
     @IBAction func subtractBtnPress(_ sender: Any) {
-//        addToWorking(value : "-")
         if replacechar(){
-            
-//            print("inreplace")
-//            let c = "*"
-            workings.removeLast()
+           workings.removeLast()
             addToWorking(value : "-")
         }else{
             addToWorking(value : "-")
-//            print("donnotreplace")
         }
     }
     @IBAction func addBtnPress(_ sender: Any) {
         if replacechar(){
-            
-//            print("inreplace")
-//            let c = "*"
             workings.removeLast()
             addToWorking(value : "+")
         }else{
             addToWorking(value : "+")
-//            print("donnotreplace")
         }
     }
     
     @IBAction func pointBtnPress(_ sender: Any) {
-//        addToWorking(value : ".")
         if replacechar(){
-            
-//            print("inreplace")
-//            let c = "*"
             workings.removeLast()
             addToWorking(value : ".")
         }else{
             addToWorking(value : ".")
-//            print("donnotreplace")
         }
         
     }
@@ -181,9 +162,7 @@ class ViewController: UIViewController {
             calculatorResults.text = resultString
             
         }else{
-            
-           // self.showToast(message: "Wrong Inpute")
-            clearall()
+             clearall()
         }
         
     }
@@ -199,17 +178,7 @@ class ViewController: UIViewController {
         
         caculatorHistoryLbl.text = history
         x = 1
-//        if replacechar(){
-//
-//            print("inreplace")
-//            let c = "*"
-//            workings.removeLast()
-//            addToWorking(value : "=")
-//        }else{
-//            addToWorking(value : "=")
-//            print("donnotreplace")
-//        }
-//        reset()
+
     }
     func formatResult(result : Double) -> String{
         if(result.truncatingRemainder(dividingBy: 1) == 0 ){
@@ -221,12 +190,9 @@ class ViewController: UIViewController {
     }
     
     func replacechar()->Bool{
-//        print("infunc")
         if workings.last == "*" || workings.last == "/" || workings.last == "+"  || workings.last == "-" || workings.last == "=" {
-//            print("inif")
             return true
         }else {
-//            print("inelse")
             return false
             
             
