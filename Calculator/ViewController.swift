@@ -25,8 +25,6 @@ class ViewController: UIViewController {
         return .lightContent
     }
     
-    
-    
     func clearall(){
         workings = ""
         calculatorWorkings.text = ""
@@ -73,8 +71,6 @@ class ViewController: UIViewController {
         addToWorking(value : "%")
         reset()
     }
-    
-    
     
     @IBAction func subtractBtnPress(_ sender: Any) {
         if replacechar(){
@@ -250,7 +246,4 @@ class ViewController: UIViewController {
         }
         return false
     }
-    
-    
-    
 }
