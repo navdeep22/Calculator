@@ -169,7 +169,7 @@ class ViewController: UIViewController {
     
     @IBAction func equalBtnPress(_ sender: Any) {
         if x == 1 {
-            history.append("=" ?? "")
+            history.append("=")
         }
         
         history.append(calculatorWorkings.text ?? "")
